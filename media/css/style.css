@@ -25,6 +25,51 @@
     position: relative;
 }
 
+.floating-nav{ 
+    z-index: 128; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%;
+}
+
+#navigation-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-top: 1px #65655E solid;
+    border-bottom: 1px #65655E solid;
+}
+
+#navigation { 
+    text-align: center;
+    height: 32px;
+    border-spacing: 0px;
+    border-collapse: separate;
+    color: #000;
+}
+
+#navigation li {
+    display:inline;
+    padding: 6px; 
+    border-right: 1px solid #65655E;
+    border-left: 1px solid #65655E;
+    position: relative;
+    top: 6px;
+    vertical-align: middle;
+}
+
+#navigation li:hover {
+    background-color: #A20C0B;
+}
+
+#navigation a {
+    display:inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
 .center-fixed {
     width: 60%;
     position: fixed;
