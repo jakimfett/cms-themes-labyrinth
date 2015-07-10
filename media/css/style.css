@@ -79,10 +79,10 @@ html, body {
     text-decoration: none;
     padding: 6px;
 }
-.social-media {
+.s-media-buttons {
     padding-top: 0px !important;
 }
-.social-media a {
+.s-media-buttons a {
     color: #ffffff;
     background: #a30d0d;
     text-decoration: none;
@@ -98,7 +98,7 @@ html, body {
     text-shadow: 2px 2px 3px #666666;
 }
 
-#purchase-float .nav-button:hover, #navigation .nav-button:hover, .social-media a:hover {
+#purchase-float .nav-button:hover, #navigation .nav-button:hover, .s-media-buttons a:hover {
     background: #8f0b0b;
     background-image: -webkit-linear-gradient(top, #8f0b0b, #a30d0d);
     background-image: -moz-linear-gradient(top, #8f0b0b, #a30d0d);
