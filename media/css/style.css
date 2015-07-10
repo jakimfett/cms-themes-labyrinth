@@ -133,8 +133,6 @@ html, body {
     margin: 0 auto;
     padding: 0px;
     text-align: justify;
-    -moz-text-align-last: center;
-    text-align-last: center;
 }
 #push {
     height: 80px;
