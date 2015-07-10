@@ -1,11 +1,14 @@
 jQuery("document").ready(function ($) {
-    var nav = $('#navigation-container');
+    var nav = $('#navigation');
+    var purchase = $('#purchase-float');
     $(window).scroll(function () {
         //console.log($(this).scrollTop());
-        if ($(this).scrollTop() > 369) {
-            nav.addClass("floating-nav");
+        if ($(this).scrollTop() > 183) {
+            nav.addClass("hidden");
+            purchase.removeClass("hidden");
         } else {
-            nav.removeClass("floating-nav");
+            nav.removeClass("hidden");
+            purchase.addClass("hidden");
         }
     });
 });
