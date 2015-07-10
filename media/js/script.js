@@ -3,7 +3,7 @@ jQuery("document").ready(function ($) {
     var purchase = $('#purchase-float');
     $(window).scroll(function () {
         //console.log($(this).scrollTop());
-        if ($(this).scrollTop() > 183) {
+        if ($(this).scrollTop() > 185) {
             nav.addClass("hidden");
             purchase.removeClass("hidden");
         } else {
