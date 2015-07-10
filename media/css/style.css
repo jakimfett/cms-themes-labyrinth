@@ -127,8 +127,8 @@ html, body {
     width: 100%;
 }
 #content, #content-wrapper {
-    background-color: #fff;
-    opacity: 0.85;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.85);
 }
 #tagline, #video-pitch {
     text-align: center;
@@ -139,9 +139,32 @@ html, body {
     margin-bottom: 16px;
     border-bottom: 2px solid #A3A2A0;
 }
-#rooms {
+#rooms, #blurbs {
     padding-top: 8px;
     padding-bottom: 32px;
+}
+#blurbs div{
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+#blurbs div div{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+}
+#blurbs div div i{
+    font-size: 100px;
+    color: #A20C0B;
+}
+#blurbs .circle {
+    width: 140px;
+    height: 140px;
+    background: #000000;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
 }
 #rooms div {
     display: inline-block;
