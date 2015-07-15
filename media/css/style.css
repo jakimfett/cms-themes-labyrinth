@@ -163,6 +163,9 @@ html, body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+#blurb-center div i, #blurb-right div i{
+    top: 46% !important;
+}
 #blurbs .circle {
     width: 140px;
     height: 140px;
