@@ -157,6 +157,7 @@ html, body {
 #blurbs div div i{
     color: #A20C0B;
     font-size: 80px;
+    height: 80px;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -167,12 +168,14 @@ html, body {
     top: 46% !important;
 }
 #blurbs .circle {
-    width: 140px;
-    height: 140px;
-    background: #000000;
     -moz-border-radius: 70px;
     -webkit-border-radius: 70px;
+    background: #000000;
     border-radius: 70px;
+    height: 140px;
+    width: 140px;
+    display: flex;
+    justify-content: center;    
 }
 #rooms div {
     display: inline-block;
