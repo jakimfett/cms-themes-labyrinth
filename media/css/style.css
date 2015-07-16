@@ -139,6 +139,23 @@ html, body {
     margin-bottom: 16px;
     border-bottom: 2px solid #A3A2A0;
 }
+#rooms div {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+#rooms div img {
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    padding: 0px;
+}
+#rooms p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: justify;
+}
 #rooms, #blurbs {
     padding-top: 8px;
     padding-bottom: 32px;
@@ -176,23 +193,6 @@ html, body {
     width: 140px;
     display: flex;
     justify-content: center;    
-}
-#rooms div {
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
-}
-#rooms div img {
-    display: block;
-    width: 80%;
-    margin: 0px auto;
-    padding: 0px;
-}
-#rooms p {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0px;
-    text-align: justify;
 }
 #push {
     height: 80px;
