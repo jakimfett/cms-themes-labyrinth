@@ -15,12 +15,11 @@ html, body {
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-
+    min-width: 720px;
     background-color: #000;
 }
 #content-container {
     width: 80%;
-    min-width: 650px;
     margin: 0 auto;
 }
 #header {
@@ -162,7 +161,7 @@ html, body {
 }
 #blurbs div{
     display: inline-block;
-    width: 32.7%;
+    width: 32.6%;
     vertical-align: top;
 }
 #blurbs div div{
