@@ -100,6 +100,13 @@ html, body {
     height: 100%;
     padding-top: 3px;
 }
+.square-facebook-link-icon:hover{
+    color: #3B5998;
+    text-shadow: 2px 2px 32px #FFF;
+}
+.square-twitter-link-icon:hover{
+    color: #55ACEE;
+}
 .left {
     position: relative;
     float: left;
