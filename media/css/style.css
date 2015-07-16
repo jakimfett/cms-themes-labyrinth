@@ -55,22 +55,12 @@ html, body {
     background-color: #A20C0B;
     border-top: 1px #65655E solid;
     border-bottom: 1px #65655E solid;
-    background-image: -webkit-linear-gradient(top, #a30d0d, #8f0b0b);
-    background-image: -moz-linear-gradient(top, #a30d0d, #8f0b0b);
-    background-image: -ms-linear-gradient(top, #a30d0d, #8f0b0b);
-    background-image: -o-linear-gradient(top, #a30d0d, #8f0b0b);
-    background-image: linear-gradient(to bottom, #a30d0d, #8f0b0b);
 }
 #navigation .nav-button i { 
     font-size: 1.2em; 
 }
 #purchase-float .nav-button, #navigation .nav-button {
     background: #a30d0d;
-    background-image: -webkit-linear-gradient(top, #a30d0d, #8f0b0b);
-    background-image: -moz-linear-gradient(top, #a30d0d, #8f0b0b);
-    background-image: -ms-linear-gradient(top, #a30d0d, #8f0b0b);
-    background-image: -o-linear-gradient(top, #a30d0d, #8f0b0b);
-    background-image: linear-gradient(to bottom, #a30d0d, #8f0b0b);
     text-shadow: 2px 2px 3px #666666;
     color: #ffffff;
     font-size: 21px;
@@ -88,15 +78,16 @@ html, body {
     padding-top: 0px;
     padding-left: 4px;
     margin-top: 0px;
+    text-shadow: 2px 2px 3px #666666;
+}
+#purchase-float, #navigation, #purchase-float .nav-button, #navigation .nav-button, .s-media-buttons a{
     background-image: -webkit-linear-gradient(top, #a30d0d, #8f0b0b);
     background-image: -moz-linear-gradient(top, #a30d0d, #8f0b0b);
     background-image: -ms-linear-gradient(top, #a30d0d, #8f0b0b);
     background-image: -o-linear-gradient(top, #a30d0d, #8f0b0b);
     background-image: linear-gradient(to bottom, #a30d0d, #8f0b0b);
-    text-shadow: 2px 2px 3px #666666;
 }
-
-#purchase-float .nav-button:hover, #navigation .nav-button:hover, .s-media-buttons a:hover {
+#purchase-float .nav-button:hover, #navigation .nav-button:hover {
     background: #8f0b0b;
     background-image: -webkit-linear-gradient(top, #8f0b0b, #a30d0d);
     background-image: -moz-linear-gradient(top, #8f0b0b, #a30d0d);
