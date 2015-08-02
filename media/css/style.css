@@ -205,17 +205,24 @@ html, body {
 .picture-container {
     width: 100%;
     display: block;
+    padding: 8px;
+    padding-top: 12px;
 }
 .picture-icon {
-    font-size: 300%;
-    padding-left: 5px;
-    padding-right: 5px;
+    font-size: 175%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: auto 0;
+}
+.text-container {
+    max-width: 80%;
 }
 .picture-left .text-container, .picture-left .picture-icon {
     float: left;
 }
 .picture-right .text-container, .picture-right .picture-icon {
     float: right;
+    text-align: right;
 }
 .center-icon i {
     font-size: 600%;
