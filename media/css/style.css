@@ -243,6 +243,7 @@ html, body {
 #faq-maintext {
     padding: 16px;
     padding-top: 8px;
+    text-align: justify;
 }
 #push {
     height: 80px;
