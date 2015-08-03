@@ -191,8 +191,6 @@ html, body {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-}#blurbs div div i:hover{
-    color: #A20C0B;
 }
 #blurb-center div i, #blurb-right div i{
     top: 46% !important;
