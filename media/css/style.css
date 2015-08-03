@@ -55,11 +55,14 @@ html, body {
     background-color: #A20C0B;
     border-top: 1px #65655E solid;
     border-bottom: 1px #65655E solid;
+    width: 100%;
 }
-#navigation .nav-button i { 
+.nav-button { 
     font-size: 1.2em; 
+    height: 24px;
 }
 #purchase-float .nav-button, #navigation .nav-button {
+    display: inline-block;
     background: #a30d0d;
     text-shadow: 2px 2px 3px #666666;
     color: #ffffff;
@@ -69,6 +72,7 @@ html, body {
 }
 .s-media-buttons {
     padding-top: 0px !important;
+    padding-right: 6px;
 }
 .s-media-buttons a {
     color: #ffffff;
@@ -97,8 +101,9 @@ html, body {
     text-decoration: none;
 }
 #purchase-float div, #navigation div {
-    height: 100%;
-    padding-top: 3px;
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
 }
 .square-facebook-link-icon:hover{
     color: #3B5998;
