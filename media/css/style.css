@@ -1,4 +1,4 @@
-/* 
+/*
     Created on : Jun 13, 2015, 8:46:13 PM
     Author     : jakimfett
 */
@@ -42,11 +42,11 @@ html, body {
     height: 80px;
     width: 100%;
 }
-.floating-nav{ 
-    z-index: 128; 
-    position: fixed; 
-    left: 0; 
-    top: 0; 
+.floating-nav{
+    z-index: 128;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
 }
 #purchase-float, #navigation{
@@ -57,8 +57,8 @@ html, body {
     border-bottom: 1px #65655E solid;
     width: 100%;
 }
-.nav-button { 
-    font-size: 1.2em; 
+.nav-button {
+    font-size: 1.2em;
     height: 24px;
 }
 #purchase-float .nav-button, #navigation .nav-button {
@@ -238,7 +238,7 @@ html, body {
 #faq {
     padding-bottom: 18px;
 }
-#faq-maintext {
+#faq-maintext, #contact-maintext {
     padding: 16px;
     padding-top: 8px;
     text-align: justify;
@@ -276,6 +276,6 @@ html, body {
 .hidden{
     display: none;
 }
-.clear { 
-    clear: both; 
+.clear {
+    clear: both;
 }
