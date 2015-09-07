@@ -219,7 +219,9 @@ html, body {
     color: #A20C0B;
 }
 .text-container {
-    max-width: 80%;
+    max-width: 75%;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .picture-left .text-container, .picture-left .picture-icon {
     float: left;
@@ -227,6 +229,20 @@ html, body {
 .picture-right .text-container, .picture-right .picture-icon {
     float: right;
     text-align: right;
+}
+.profile-picture {
+    position: relative;
+}
+.profile-picture img {
+    height: 200px;
+    width: 150px;
+}
+.picture-right .profile-picture {
+    float: right;
+
+}
+.picture-left .profile-picture {
+    float: left;
 }
 .center-icon i {
     font-size: 600%;
