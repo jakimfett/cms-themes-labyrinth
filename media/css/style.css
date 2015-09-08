@@ -159,7 +159,7 @@ html, body {
     width: 80%;
     margin: 0 auto;
     padding: 0px;
-    text-align: justify;
+    text-align: center;
 }
 #rooms, #blurbs {
     padding-top: 8px;
@@ -181,7 +181,7 @@ html, body {
 #blurbs div p {
     padding-top: 16px;
     padding-bottom: 32px;
-    text-align: justify;
+    text-align: center;
 }
 #blurbs div div i{
     color: #FFF;
@@ -258,7 +258,7 @@ html, body {
 #faq-maintext, #contact-maintext {
     padding: 16px;
     padding-top: 8px;
-    text-align: justify;
+    text-align: center;
 }
 #push {
     height: 80px;
