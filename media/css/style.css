@@ -153,6 +153,7 @@ html, body {
     width: 80%;
     margin: 0px auto;
     padding: 0px;
+    padding-bottom: 20px;
 }
 #rooms p {
     width: 80%;
