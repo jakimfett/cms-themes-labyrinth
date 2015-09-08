@@ -124,6 +124,9 @@ html, body {
     width: 75%;
     margin: 0 auto;
 }
+#nav-tickets {
+    max-width: 260px;
+}
 #content-wrapper {
     width: 100%;
 }
