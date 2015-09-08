@@ -291,6 +291,12 @@ html, body {
     padding: 36px;
     text-align: center;
 }
+#beta-test-notice {
+    padding: 16px;
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+}
 #push {
     height: 80px;
 }
