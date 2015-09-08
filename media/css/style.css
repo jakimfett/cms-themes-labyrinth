@@ -206,6 +206,21 @@ html, body {
     display: flex;
     justify-content: center;
 }
+#closing {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0px auto;
+    text-align: center;
+    border-top: 2px solid #A3A2A0;
+}
+#breakline {
+    width: 80%;
+    padding-top: 4px;
+    margin: 0px auto;
+    text-align: center;
+    height: 24px;
+    border-top: 2px solid #A3A2A0;
+}
 .picture-container {
     width: 100%;
     display: block;
