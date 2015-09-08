@@ -262,9 +262,16 @@ html, body {
 }
 #contact-maintext {
     padding: 26px;
-    margin-bottom: 18px;
     text-align: center;
     border-bottom: 2px solid #A3A2A0;
+}
+#contact-profiles {
+    padding: 26px;
+    border-bottom: 2px solid #A3A2A0;
+}
+#contact-address {
+    padding: 36px;
+    text-align: center;
 }
 #push {
     height: 80px;
