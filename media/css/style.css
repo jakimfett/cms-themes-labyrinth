@@ -255,10 +255,16 @@ html, body {
 #faq {
     padding-bottom: 18px;
 }
-#faq-maintext, #contact-maintext {
+#faq-maintext {
     padding: 16px;
     padding-top: 8px;
     text-align: center;
+}
+#contact-maintext {
+    padding: 26px;
+    margin-bottom: 18px;
+    text-align: center;
+    border-bottom: 2px solid #A3A2A0;
 }
 #push {
     height: 80px;
