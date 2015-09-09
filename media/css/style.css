@@ -301,6 +301,13 @@ html, body {
 #subscribe-form{
     padding: 24px;
 }
+#unsubscribe-div {
+    text-align: center;
+    min-height: 500px;
+}
+#unsubscribe-image, #unsubscribe-contact, #unsubscribe-form {
+    padding: 24px;
+}
 #push {
     height: 80px;
 }
