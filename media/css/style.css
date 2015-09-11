@@ -297,6 +297,7 @@ html, body {
     width: 80%;
     margin: 0px auto;
     text-align: center;
+    min-height: 800px;
 }
 #subscribe-form{
     padding: 24px;
