@@ -2,6 +2,17 @@
     Created on : Jun 13, 2015, 8:46:13 PM
     Author     : jakimfett
 */
+@media (max-width: 720px) and (min-width: 520px) {
+    @viewport {
+        width: 640px;
+    }
+}
+@viewport {
+    width: 980px;
+    min-zoom: 0.25;
+    max-zoom: 5;
+    orientation: landscape;
+}
 *{
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     margin: 0px;
