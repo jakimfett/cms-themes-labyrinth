@@ -2,13 +2,13 @@
     Created on : Jun 13, 2015, 8:46:13 PM
     Author     : jakimfett
 */
-@media (max-width: 720px) and (min-width: 520px) {
+@media (max-width: 720px) {
     @viewport {
-        width: 640px;
+        width: 720px;
     }
 }
 @viewport {
-    width: 980px;
+    width: 720px;
     min-zoom: 0.25;
     max-zoom: 5;
     orientation: landscape;
@@ -227,6 +227,7 @@ html, body {
     margin: 0px auto;
     text-align: center;
     border-top: 2px solid #A3A2A0;
+    min-width: 80%;
 }
 #breakline {
     width: 80%;
