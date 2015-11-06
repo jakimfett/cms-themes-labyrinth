@@ -178,7 +178,16 @@ html, body {
 }
 #rooms, #blurbs {
     padding-top: 8px;
+    padding-bottom: 8px;
+}
+#previous-chapters {
+    text-align: center;
     padding-bottom: 32px;
+}
+#previous-chapters a{
+    text-decoration: none;
+    color: #323232;
+    font-style: italic;
 }
 #blurbs div{
     display: inline-block;
