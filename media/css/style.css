@@ -180,8 +180,14 @@ html, body {
     padding-top: 8px;
     padding-bottom: 8px;
 }
+#blurbs {
+    position: relative;
+    left: 10px;
+}
 #previous-chapters {
     text-align: center;
+    position: relative;
+    left: -10px;
     padding-bottom: 32px;
 }
 #previous-chapters a{
