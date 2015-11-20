@@ -336,9 +336,10 @@ html, body {
 #unsubscribe-image, #unsubscribe-contact, #unsubscribe-form {
     padding: 24px;
 }
-.chapter-container, #chapters-maintext {
+#chapters-maintext {
     text-align: center;
-
+}
+.chapter-container, #chapters-maintext {
     margin: 0px auto;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -346,7 +347,12 @@ html, body {
 .chapter-container .text-container{
     max-width: none;
 }
-
+.chapter-image {
+    position: relative;
+    float: right;
+    margin: 0px;
+    width: 33%;
+}
 #push {
     height: 80px;
 }
