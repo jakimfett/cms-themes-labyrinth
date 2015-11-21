@@ -349,9 +349,14 @@ html, body {
 }
 .chapter-image {
     position: relative;
-    float: right;
     margin: 0px;
     width: 33%;
+}
+.chapter-image-right {
+    float: right;
+}
+.chapter-image-left {
+    float: left;
 }
 #push {
     height: 80px;
