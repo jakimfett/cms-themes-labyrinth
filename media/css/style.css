@@ -184,16 +184,24 @@ html, body {
     position: relative;
     left: 10px;
 }
-#previous-chapters {
-    text-align: center;
+#previous-future-chapters {
+    font-size: 120%;
     position: relative;
-    left: -10px;
     padding-bottom: 32px;
+    padding-top: 32px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #A3A2A0;
 }
-#previous-chapters a{
+#previous-future-chapters a{
     text-decoration: none;
     color: #323232;
     font-style: italic;
+}
+#previous-chapters {
+    float: left;
+}
+#future-chapters {
+    float: right;
 }
 #blurbs div{
     display: inline-block;
