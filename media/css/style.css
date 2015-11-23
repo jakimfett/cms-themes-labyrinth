@@ -375,6 +375,9 @@ html, body {
     float: left;
     padding-right: 16px;
 }
+#chapters-profiles{
+    padding-bottom: 32px;
+}
 #push {
     height: 80px;
 }
