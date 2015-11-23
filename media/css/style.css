@@ -345,10 +345,12 @@ html, body {
     padding: 24px;
 }
 #chapters-maintext {
-    text-align: center;
-}
-.chapter-container, #chapters-maintext {
+    padding: 26px;
     margin: 0px auto;
+    text-align: center;
+    border-bottom: 2px solid #A3A2A0;
+}
+.chapter-container{
     padding-top: 16px;
     padding-bottom: 16px;
 }
@@ -375,8 +377,8 @@ html, body {
     float: left;
     padding-right: 16px;
 }
-#chapters-profiles{
-    padding-bottom: 32px;
+#chapters-profiles #closing{
+    margin-top: 32px;
 }
 #push {
     height: 80px;
