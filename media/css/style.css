@@ -355,16 +355,25 @@ html, body {
 .chapter-container .text-container{
     max-width: none;
 }
+.chapter-container .text-container h2 a{
+    color: black;
+}
+.chapter-container .text-container h2 a:visited, .chapter-container .text-container h2 a:hover{
+    color: #A20C0B;
+}
 .chapter-image {
     position: relative;
     margin: 0px;
     width: 33%;
+    padding-top: 10px;
 }
 .chapter-image-right {
     float: right;
+    padding-left: 16px;
 }
 .chapter-image-left {
     float: left;
+    padding-right: 16px;
 }
 #push {
     height: 80px;
