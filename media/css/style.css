@@ -380,6 +380,29 @@ html, body {
 #chapters-profiles #closing{
     margin-top: 32px;
 }
+.single-chapter-container {
+    text-align: center;
+    padding-bottom: 26px;
+}
+.single-chapter-text-container{
+    width: 100%;
+}
+.single-chapter-text-container #chapter-title{
+    padding-top: 26px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #A3A2A0;
+}
+.single-chapter-image {
+    width: 80%
+}
+.chapter-story-text{
+    padding: 16px;
+}
+.single-chapter-text-container p {
+    text-align: left;
+    padding-bottom: 10px;
+}
 #push {
     height: 80px;
 }
