@@ -55,10 +55,24 @@
 				hWinH = 600;
 
 			// Resize our slides
-			$footer.height(6 * (winH / 8));
-			$fullwidths.each(function() { jQuery(this).height(winH); });
-			$halfwidths.each(function() { jQuery(this).height(hWinH); } );
-			$blackouts.each(function() { jQuery(this).height(winH / 8); });
+			var reperf = function(el, umPrefSz) {
+				var elAcSz = el.height();
+				if (elAcSz > umPrefSz) 
+					el.height(10 + elAcSz);
+				else				
+					el.height(umPrefSz); 
+			};
+			
+			reperf($footer, 6 * (winH / 8));
+			$fullwidths.each(function() { 
+				reperf(jQuery(this), winH);
+			});
+			$halfwidths.each(function() { 
+				reperf(jQuery(this), hWinH); 
+			} );
+			$blackouts.each(function() { 
+				reperf(jQuery(this), winH / 8); 
+			});
 
 			$(".dyn-size").each(function() {
 				expand($(this));
@@ -67,6 +81,18 @@
 			// Refresh Skrollr after resizing our sections
 			s.refresh($('.intro'));
 		}
+		
+		var flip = function() {
+			var $actions = $(".actions");
+			$actions.each(function() { 
+				if ($(this).css("display") == "block")
+					$(this).css("display", "none");
+				else
+					$(this).css("display", "block");
+			});
+			return false;
+		};
+		$("#xpand").on("click", flip);
 	
 		adjustWindow();
 		$medias.fitVids();
