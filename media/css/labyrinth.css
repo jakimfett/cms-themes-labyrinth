@@ -1,0 +1,366 @@
+/*************************
+ * Global Defaults
+ *************************/
+
+@font-face {
+	font-family: 'gtrajan_reg';
+	src: url('/media/labyrinth/fonts/gtrajan_reg.eot');
+	src: url('/media/labyrinth/fonts/gtrajan_reg.woff') format('woff'), 
+			url('/media/labyrinth/fonts/gtrajan_reg.ttf') format('truetype'), 
+			url('/media/labyrinth/fonts/gtrajan_reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin: 0px;	/* reset */
+	padding: 0px;	/* reset */
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.pop { position: relative; }
+
+/*************************
+ * Headings
+ *************************/
+h1, h2, h3  { font-family: "gtrajan_reg", "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+h1.super { font-size: 3em; }
+h2.super { font-size: 2em; }
+h3.super { font-size: 1.3em; }
+
+h1.shadow, h2.shadow, h3.shadow { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+h1.white-shadow, h2.white-shadow, h3.white-shadow { text-shadow: 1px 1px 4px rgba(255, 255, 255, 1.0); }
+
+p { margin-top: 5px; margin-bottom: 9px; }
+img.fit { max-width: 100%; max-height: 100%; }
+.wrap { padding: 4%; }
+
+.bigtex h1 { font-size: 2.33rem; }
+.bigtex p { font-size: 1.33rem; }
+
+@media screen and (max-width: 400px) {
+	h1.super { font-size: 1.3rem; }
+	h2.super { font-size: 1.0rem; }
+	h3.super { font-size: 0.8rem; }
+	.bigtex h1 { font-size: 1.3rem; }
+	.bigtex p { font-size: 1.0rem; }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1000px) {
+	h1.super { font-size: 1.8rem; }
+	h2.super { font-size: 1.3rem; }
+	h3.super { font-size: 1.0rem; }
+	.bigtex h1 { font-size: 1.3rem; }
+	.bigtex p { font-size: 1.0rem; }
+}
+
+/*************************
+ * BCG framework
+ *************************/
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.hsContainer {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.hsContent {
+	max-width: 550px;
+	margin: -150px auto 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 8%;
+	text-align: center
+}
+
+.backfill { background-color: rgba(255, 255, 255, 0.7); }
+
+@media screen and (max-width: 1000px) {
+	.hsContent { padding: 5px 5px; }
+}
+
+/*************************
+ * BCG Prefab blocks
+ *************************/
+
+#intro .bcg { background-image: url('/media/labyrinth/images/maze.jpg'); }
+#intro img { height: auto; max-width: 100%; }
+
+#chapters .bcg { background-image: url('/media/labyrinth/images/roundmaze.jpg'); }
+#about .bcg { background-color: #000; color: #fff; }
+#parables .bcg { background-image: url('/media/labyrinth/images/horns.jpg'); }
+
+#header-chapters .bcg { background-image: url('/media/labyrinth/images/maze.jpg'); }
+#header-faqs .bcg { background-image: url('/media/labyrinth/images/front.jpg'); }
+#header-who .bcg { background-image: url('/media/labyrinth/images/buttons.jpg'); }
+
+
+#footer .bcg {
+	background-image: url('/media/labyrinth/images/bldg.jpg');
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+#footer img { height: 64px; }
+
+.blackout .bcg { background-color: #000; }
+
+/*************************
+ * BCG macros
+ *************************/
+
+#macro-magnify .bcg { background-image: url('/media/labyrinth/images/magnify.jpg'); }
+#macro-mystery .bcg { background-image: url('/media/labyrinth/images/mystery.jpg'); }
+#macro-blitz .bcg { background-image: url('/media/labyrinth/images/blitzpaint.jpg'); }
+
+/*************************
+ * Tableless tables & grids
+ *************************/
+
+.cols .left, .cols .right { display: inline-block; width: 50%; }
+.cols .left { float: left; } .cols .right { float: right; }
+
+.cols.sl .left  { width: 25%; } .cols.sl .right { width: 75%; }
+.cols.sr .left  { width: 75%; } .cols.sr .right { width: 25%; }
+
+.cols.el .left  { width: 33%; } .cols.el .right { width: 66%; }
+.cols.er .left  { width: 66%; } .cols.er .right { width: 33%; }
+
+.grid > div { display: inline-block; float: left; }
+.grid.beta > div { width: 50%; } .grid.gamma  > div { width: 33%; } .grid.delta > div { width: 25%; }
+.grid::before, .grid::after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;  }
+
+@media screen and (max-width: 1000px) {
+	
+}
+
+@media screen and (max-width: 400px) {
+	/* We are forced to flatten all tables */
+	.cols .left, .cols .right { 
+		display: block; width: 100% !important; 
+		margin-top: 5px; margin-bottom: 5px; 
+	}
+	.grid > div { 
+		display: block; float: none; width: 100% !important;
+		margin-top: 5px; margin-bottom: 5px; 
+	}
+}
+
+/*************************
+ * Navigation
+ *************************/
+nav { 
+	width: 100%;
+	z-index: 100; 
+	position: fixed; 
+	top: 0; 
+	visibility: hidden;
+	background-image: -webkit-linear-gradient(top, #a30d0d, #8f0b0b);
+	background-image: -moz-linear-gradient(top, #a30d0d, #8f0b0b);
+	background-image: -ms-linear-gradient(top, #a30d0d, #8f0b0b);
+	background-image: -o-linear-gradient(top, #a30d0d, #8f0b0b);
+	background-image: linear-gradient(to bottom, #a30d0d, #8f0b0b);
+}
+
+nav .container { width: 100%; }
+
+nav div, nav ul, nav li { display: inline-block; }
+
+nav .logo, nav .actions{ height: 36px; }
+nav .logo { 
+	float: left; 
+	background: url("/media/labyrinth/images/logo.png") no-repeat; 
+	width: 204px; height: 36px;
+	background-size: 204px 36px;
+}
+nav .xpand { display: none; }
+
+@media screen and (max-width: 1000px) {
+	nav .logo { 
+		background: url("/media/labyrinth/images/favicon.png") no-repeat; 
+		width: 36px; height: 36px; margin: 2px;
+		background-size: 36px 36px;
+	}
+}
+
+
+nav .actions { line-height: 36px; float: left; }
+nav .actions.right { float: right; margin-right: 32px; }
+nav .actions.right .smi a:hover { text-shadow: 2px 2px 32px #FFF; } 
+nav .actions.right .smi a:hover > .square-facebook-link-icon { color: #3B5998; }
+nav .actions.right .smi a:hover > .square-twitter-link-icon { color: #55ACEE; }
+
+nav li { list-style: none; margin-left: 10px; }
+nav li a {
+    text-shadow: 2px 2px 3px #666666;
+    color: #ffffff;
+    font-size: 21px;
+    text-decoration: none;
+    padding: 6px;
+	position: relative;
+}
+
+
+nav li a.active {
+	background-image: -webkit-linear-gradient(top, #a30d0d, #8f0b0b);
+    background-image: -moz-linear-gradient(top, #a30d0d, #8f0b0b);
+    background-image: -ms-linear-gradient(top, #a30d0d, #8f0b0b);
+    background-image: -o-linear-gradient(top, #a30d0d, #8f0b0b);
+    background-image: linear-gradient(to bottom, #a30d0d, #8f0b0b);
+}
+
+nav .actions.left li a:hover, nav .actions.left li a.active {
+	background: #8f0b0b;
+	background-image: -webkit-linear-gradient(top, #8f0b0b, #a30d0d);
+	background-image: -moz-linear-gradient(top, #8f0b0b, #a30d0d);
+	background-image: -ms-linear-gradient(top, #8f0b0b, #a30d0d);
+	background-image: -o-linear-gradient(top, #8f0b0b, #a30d0d);
+	background-image: linear-gradient(to bottom, #8f0b0b, #a30d0d);
+}
+
+nav .actions.left li a.active:before, nav .actions.left li a.active:after, nav .actions.left li a:hover:before, nav .actions.left li a:hover:after {
+	content: "";
+	position: absolute; z-index: -1;
+	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	top: 50%; bottom: 0;
+	left: 10px; right: 10px;
+	border-radius: 100px / 10px;
+}
+
+@media screen and (max-width: 900px) {
+	nav .xpand { 
+		display: block; float: right;
+		line-height: 34px; font-size: 26px; text-align: center; color: white; 
+		width: 36px; height: 36px;
+		margin-top: 2px; margin-right: 12px;
+		border: 1px solid #8f0b0b;
+		border-radius: 5px; 
+	}
+	nav a:hover .xpand { background: #8f0b0b; }
+	nav .clamp { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;  }
+	
+	nav .actions { height: auto; width: 100%; display: none; }
+	nav .actions::before, nav .actions::after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;  }
+	nav .actions.right { float: none; margin: 0; }
+	
+	nav .actions.left ul, nav .actions.left li, nav .actions.left a { display: block; margin: 0; width: 100%; }
+	nav .actions.right ul, nav .actions.right li { display: inline-block; }
+
+}
+
+
+
+#blurbs div{
+    display: inline-block;
+    width: 31.6%;
+    vertical-align: top;
+}
+
+#blurbs div div{
+    text-align: center;
+}
+
+#blurbs div div, #blurbs div p{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#blurbs div p {
+    padding-top: 16px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+#blurbs div div i{
+    color: #FFF;
+    font-size: 80px;
+    height: 80px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#blurb-center div i, #blurb-right div i{
+    top: 46% !important;
+}
+
+#blurbs .circle {
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    background: #000000;
+    border-radius: 70px;
+    height: 140px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.picture-container {
+    width: 100%;
+    display: block;
+    padding: 8px;
+    padding-top: 12px;
+}
+
+.picture-container::after { 
+	visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; 
+}
+
+.picture-icon {
+    font-size: 175%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: auto 0;
+    color: #A20C0B;
+}
+
+.text-container {
+    max-width: 75%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.picture-left .text-container, .picture-left .picture-icon {
+    float: left;
+	text-align: left;
+}
+
+.picture-right .text-container, .picture-right .picture-icon {
+    float: right;
+    text-align: right;
+}
+
+.chapter-container { margin-top: 15px; margin-bottom: 15px; }
+.chapter-container::before, .chapter-container::after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.chapter-container .chapter-image { margin: 10px; }
+.chapter-container .text-container { max-width: 100%; }
+.chapter-container.chapter-align-left .chapter-image { float: right; }
+.chapter-container.chapter-align-right .chapter-image { float: left; }
+
+
+img.face { 
+	max-height: 200px;
+    max-width: 150px;
+}
