@@ -152,6 +152,18 @@ img.fit { max-width: 100%; max-height: 100%; }
 	
 }
 
+@media screen and (max-width: 650px) {
+	/* We are forced to flatten all tables */
+	.grid.gamma .cols .left, .grid.gamma .cols .right { 
+		display: block; width: 100% !important; 
+		margin-top: 5px; margin-bottom: 5px; 
+	}
+	.grid.gamma > div { 
+		display: block; float: none; width: 100% !important;
+		margin-top: 5px; margin-bottom: 5px; 
+	}
+}
+
 @media screen and (max-width: 400px) {
 	/* We are forced to flatten all tables */
 	.cols .left, .cols .right { 

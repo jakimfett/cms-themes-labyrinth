@@ -56,11 +56,12 @@
 
 			// Resize our slides
 			var reperf = function(el, umPrefSz) {
+				el.css("height", "auto");
 				var elAcSz = el.height();
 				if (elAcSz > umPrefSz) 
-					el.height(10 + elAcSz);
-				else				
-					el.height(umPrefSz); 
+					el.css("height", 50 + elAcSz);
+				else
+					el.css("height", umPrefSz); 
 			};
 			
 			reperf($footer, 6 * (winH / 8));
@@ -94,9 +95,9 @@
 		};
 		$("#xpand").on("click", flip);
 	
-		adjustWindow();
-		$medias.fitVids();
-		$(window).on("resize", function() { adjustWindow(); });
+		setTimeout(function() { adjustWindow(); $medias.fitVids(); }, 250);
+		$(window).on("resize", function() { adjustWindow(); $medias.fitVids(); });
+		
 	}
 	
 	$(document).on("ready", function() { labyrinth(); });
