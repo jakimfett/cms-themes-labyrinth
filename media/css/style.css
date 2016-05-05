@@ -184,7 +184,7 @@ html, body {
     position: relative;
     left: 10px;
 }
-#previous-future-chapters {
+#previous-future-games {
     font-size: 120%;
     position: relative;
     padding-bottom: 32px;
@@ -192,15 +192,15 @@ html, body {
     margin-bottom: 16px;
     border-bottom: 2px solid #A3A2A0;
 }
-#previous-future-chapters a{
+#previous-future-games a{
     text-decoration: none;
     color: #323232;
     font-style: italic;
 }
-#previous-chapters {
+#previous-games {
     float: left;
 }
-#future-chapters {
+#future-games {
     float: right;
 }
 #blurbs div{
@@ -344,62 +344,62 @@ html, body {
 #unsubscribe-image, #unsubscribe-contact, #unsubscribe-form {
     padding: 24px;
 }
-#chapters-maintext {
+#games-maintext {
     padding: 26px;
     margin: 0px auto;
     text-align: center;
     border-bottom: 2px solid #A3A2A0;
 }
-.chapter-container{
+.game-container{
     padding-top: 16px;
     padding-bottom: 16px;
 }
-.chapter-container .text-container{
+.game-container .text-container{
     max-width: none;
 }
-.chapter-container .text-container h2 a{
+.game-container .text-container h2 a{
     color: black;
 }
-.chapter-container .text-container h2 a:visited, .chapter-container .text-container h2 a:hover{
+.game-container .text-container h2 a:visited, .game-container .text-container h2 a:hover{
     color: #A20C0B;
 }
-.chapter-image {
+.game-image {
     position: relative;
     margin: 0px;
     width: 33%;
     padding-top: 10px;
 }
-.chapter-image-right {
+.game-image-right {
     float: right;
     padding-left: 16px;
 }
-.chapter-image-left {
+.game-image-left {
     float: left;
     padding-right: 16px;
 }
-#chapters-profiles #closing{
+#games-profiles #closing{
     margin-top: 32px;
 }
-.single-chapter-container {
+.single-game-container {
     text-align: center;
     padding-bottom: 26px;
 }
-.single-chapter-text-container{
+.single-game-text-container{
     width: 100%;
 }
-.single-chapter-text-container #chapter-title{
+.single-game-text-container #game-title{
     padding-top: 26px;
     padding-bottom: 6px;
     margin-bottom: 20px;
     border-bottom: 2px solid #A3A2A0;
 }
-.single-chapter-image {
+.single-game-image {
     width: 80%
 }
-.chapter-story-text{
+.game-story-text{
     padding: 16px;
 }
-.single-chapter-text-container p {
+.single-game-text-container p {
     text-align: left;
     padding-bottom: 10px;
 }
