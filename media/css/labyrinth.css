@@ -376,6 +376,19 @@ nav .actions.left li a.active:before, nav .actions.left li a.active:after, nav .
 .game-container.game-align-left .game-image { float: right; }
 .game-container.game-align-right .game-image { float: left; }
 
+.text-container h2 a, .bigtex p a, .wrap p a {
+    text-decoration: none;
+    color: black;
+}
+
+.bigtex p a {
+    font-weight: bold;
+}
+
+.text-container h2 a:hover, .bigtex p a:hover,.wrap p a:hover {
+    text-decoration: none;
+    color: #A20C0B;
+}
 
 img.face {
     max-height: 200px;
