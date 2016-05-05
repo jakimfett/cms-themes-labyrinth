@@ -371,8 +371,14 @@ nav .actions.left li a.active:before, nav .actions.left li a.active:after, nav .
 
 .game-container { margin-top: 15px; margin-bottom: 15px; }
 .game-container::before, .game-container::after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
-.game-container .game-image { margin: 10px; }
-.game-container .text-container { max-width: 100%; }
+.game-container .game-image { margin: 0px 10px; }
+.game-container div h2 {
+    margin: 10px 0px;
+}
+.game-container .text-container {
+    max-width: 100%;
+    padding: 30px 0px;
+}
 .game-container.game-align-left .game-image { float: right; }
 .game-container.game-align-right .game-image { float: left; }
 
