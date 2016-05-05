@@ -385,6 +385,7 @@ nav .actions.left li a.active:before, nav .actions.left li a.active:after, nav .
 .text-container h2 a, .bigtex p a, .wrap p a {
     text-decoration: none;
     color: black;
+    font-family: "gtrajan_reg", "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 .bigtex p a {
