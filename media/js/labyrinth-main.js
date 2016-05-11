@@ -98,10 +98,12 @@
         setTimeout(function () {
             adjustWindow();
             $medias.fitVids();
+            $("body,html").css("overflow", "auto");
         }, 250);
         $(window).on("resize", function () {
             adjustWindow();
             $medias.fitVids();
+            $("body,html").css("overflow", "auto");
         });
 
     }
